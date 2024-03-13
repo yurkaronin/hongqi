@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Список страниц</title>
+  <link rel="stylesheet" href="./libs/simplebar.css">
+  <link rel="stylesheet" href="./libs/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+
+  <style>
+    .dark {
+      background-color: var(--Dark);
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body class="body">
+  <header class="header">
+    <div class="wrapper">
+
+    </div>
+  </header>
+  <main class="main">
+    <section class="section">
+      <div class="wrapper">
+        <h1 class="title">Список свёрстанных страниц</h1>
+
+        <button class="swiper-button swiper-button-prev" type="button">
+          <svg>
+            <use href="./svg/sprite.svg#arrow-to-left"></use>
+          </svg>
+        </button>
+        <div class="dark">
+          <button class="swiper-button swiper-button-next" type="button">
+            <svg>
+              <use href="./svg/sprite.svg#arrow-to-right-white"></use>
+            </svg>
+          </button>
+        </div>
+
+
+        <ol>
+          <li><a href="home.html">Главная</a></li>
+          <li><a href="model-range.html">Модельный ряд</a></li>
+          <li><a href="car.html">Автомобиль</a></li>
+          <li><a href="cars-in-stock.html">Автомобили в наличии</a></li>
+          <li><a href="car-details.html">Автомобиль детальная</a></li>
+          <li><a href="about-us.html">О компании</a></li>
+          <li><a href="service.html">Сервис</a></li>
+          <li><a href="service-options.html">Услуги сервиса</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+          <li><a href="activities.html">Активности</a></li>
+        </ol>
+
+      </div>
+    </section>
+    <section class="section">
+      <div class="wrapper">
+        <h2 class="title">Комментарии и заметки по вёрстке </h2>
+        <p>Тут будет какой то текст, который будет полезен для программистов, которые будут переносить вёрстку на CMS
+        </p>
+      </div>
+    </section>
+
+  </main>
+  <footer class="footer">
+    <div class="wrapper"></div>
+  </footer>
+
+  <script src="./libs/fslightbox.min.js"></script>
+  <script src="./libs/gsap.min.js"></script>
+  <script src="./libs/ScrollTrigger.min.js"></script>
+  <script src="./libs/simplebar.min.js"></script>
+  <script src="./libs/swiper-bundle.min.js"></script>
+
+  <script src="./js/parts/animation.js"></script>
+  <script src="./js/parts/map.js"></script>
+  <script src="./js/parts/modals.js"></script>
+  <script src="./js/parts/sliders.js"></script>
+
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

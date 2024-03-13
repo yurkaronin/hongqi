@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+
+  <!-- стрелка для кнопки влево  -->
+  <symbol id="arrow-to-left" viewBox="0 0 18 12" fill="none">
+    <path d="M5.28571 2L1 6M1 6L5.28571 10M1 6L17 6" stroke="currentColor" stroke-width="2" stroke-linecap="square"
+      stroke-linejoin="round" />
+  </symbol>
+
+  <!-- стрелка для кнопки вправо белая -->
+  <symbol id="arrow-to-right-white" viewBox="0 0 17 10" fill="none">
+    <path d="M11.7143 1L16 5M16 5L11.7143 9M16 5L-4.76995e-08 5" stroke="currentColor" stroke-width="2"
+      stroke-linejoin="round" />
+  </symbol>
+
+
+</svg>

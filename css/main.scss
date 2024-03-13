@@ -1,0 +1,40 @@
+// base
+@import
+"./base/normalize",
+"./base/fonts",
+"./base/root",
+"./base/global",
+"./base/support";
+
+// blocks
+@import
+"./blocks/wrapper",
+"./blocks/button",
+"./blocks/section",
+"./blocks/navigation",
+"./blocks/title",
+"./blocks/subtitle",
+"./blocks/form",
+"./blocks/map",
+"./blocks/swiper-button";
+
+// sections
+@import
+"./sections/header",
+"./sections/main",
+"./sections/first-screen",
+"./sections/modal",
+"./sections/footer";
+
+// utils
+@import
+"./utils/visually-hidden",
+"./utils/list-reset";
+// pages
+
+
+// activity
+@import
+"./activity/header-sticky",
+"./activity/menu-open",
+"./activity/modal-open";

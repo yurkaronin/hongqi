@@ -1,0 +1,14 @@
+.title {
+  display: block;
+  margin-top: 0;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 32px;
+  color: var(--dark);
+  font-style: normal;
+  line-height: 1.2;
+
+  @media (max-width: 767px) {
+    font-size: 25px;
+  }
+}
