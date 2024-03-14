@@ -1,14 +1,15 @@
-// .wrapper {
-//   max-width: calc(var(--container-width) + 48px * 2);
-//   margin-inline: auto;
-//   padding-inline: 48px;
+.wrapper {
+  max-width: calc(1408px + (48px * 2));
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 48px;
 
-//   @media (max-width: 1023px) {
-//     max-width: calc(var(--container-width) + 40px * 2);
-//     padding-inline: 40px;
-//   }
-//   @media (max-width: 767px) {
-//     max-width: calc(var(--container-width) + 20px * 2);
-//     padding-inline: 20px;
-//   }
-// }
+  @media (max-width: 1023px) {
+    max-width: 100%;
+    padding-inline: 40px;
+  }
+  @media (max-width: 767px) {
+    max-width: calc(var(--container-width) + 20px * 2);
+    padding-inline: 20px;
+  }
+}

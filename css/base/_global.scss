@@ -14,7 +14,7 @@ body {
   margin: 0;
   min-width: 375px;
   font-size: 16px;
-  font-family: var(--first-family);
+  font-family: var(--font-family);
   position: relative;
   overflow-x: hidden;
   background-color: var(--color-bg);
@@ -93,7 +93,7 @@ a:not([class]) {
 
 input,
 textarea {
-  font-family: var(--first-family);
+  font-family: var(--font-family);
   font-size: inherit;
   line-height: inherit;
   letter-spacing: inherit;
@@ -109,7 +109,7 @@ textarea {
   height: 56px;
 
   &::placeholder {
-    font-family: var(--first-family);
+    font-family: var(--font-family);
     font-size: 16px;
     line-height: inherit;
     letter-spacing: inherit;
