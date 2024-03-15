@@ -567,9 +567,6 @@ input[type=radio].visually-hidden {
   }
 }
 
-.header__static {
-  display: none;
-}
 .header__static-grid {
   display: grid;
   gap: 32px;
@@ -602,6 +599,10 @@ input[type=radio].visually-hidden {
   transition: all 0.4s;
   background-color: var(--White);
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
+  visibility: hidden;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(-100px);
 }
 .header__sticky-grid {
   display: grid;
@@ -874,6 +875,13 @@ input[type=radio].visually-hidden {
   border: 0;
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
+}
+
+.header-sticky .header__sticky {
+  visibility: initial;
+  pointer-events: initial;
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .modal-open {

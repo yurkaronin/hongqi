@@ -1,8 +1,6 @@
 .header {
   // статичная шапка
   &__static {
-    // временные стили скрыл
-    display: none;
     &-grid {
       display: grid;
       gap: 32px;
@@ -38,6 +36,14 @@
     transition: all 0.4s;
     background-color: var(--White);
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
+
+    // прячем
+    visibility: hidden;
+    pointer-events: none;
+    opacity: 0;
+
+    // смещаем для красивого появления
+    transform: translateY(-100px);
     &-grid {
       display: grid;
       gap: 32px;
