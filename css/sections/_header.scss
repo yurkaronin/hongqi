@@ -1,6 +1,8 @@
 .header {
   // статичная шапка
   &__static {
+    // временные стили скрыл
+    display: none;
     &-grid {
       display: grid;
       gap: 32px;
@@ -12,6 +14,7 @@
       grid-template-columns: 8fr auto;
       align-items: center;
       position: relative;
+      z-index: 5;
 
       &::before {
         content: "";
@@ -25,6 +28,29 @@
         background-color: var(--Line);
       }
     }
+  }
+  // прилипающая шапка
+  &__sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    transition: all 0.4s;
+    background-color: var(--White);
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
+    &-grid {
+      display: grid;
+      gap: 32px;
+      grid-template-columns: 44px 1fr 180px;
+      align-items: center;
+    }
+    .header__logo {
+      padding-top: 7px;
+      padding-bottom: 7px;
+    }
+    .header__contacts-label {
+      height: 54px;
+  }
   }
   // контакты
   &__contacts {
@@ -145,10 +171,41 @@
     }
     &-item {
       position: relative;
+      flex-grow: 1;
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        width: 1px;
+        height: 25%;
+        background-color: var(--Line);
+        pointer-events: none;
+        transform: translateY(-50%);
+        z-index: 0;
+      }
+      &:first-of-type {
+        &::after {
+          content: '';
+          display: block;
+          position: absolute;
+          left: 0;
+          top: 50%;
+          width: 1px;
+          height: 25%;
+          background-color: var(--Line);
+          pointer-events: none;
+          transform: translateY(-50%);
+          z-index: 0;
+        }
+      }
+
     }
     &-link {
       display: flex;
-      max-width: max-content;
+      max-width: 100%;
+      width: 100%;
       text-align: center;
       text-decoration: none;
       font-weight: 500;
@@ -159,14 +216,17 @@
       color: var(--dark);
       padding: 20px 30px;
       position: relative;
-
       background-color: transparent;
       transition: all 0.3s;
+      z-index: 2;
+      justify-content: center;
+
       &:hover,
       &:active,
       &:focus {
         color: var(--White);
         background-color: var(--Dark);
+
       }
     }
     &-sublist {
@@ -199,6 +259,14 @@
         height: 2px;
         background-color: var(--Red);
         margin-right: 10px;
+        transition: width 0.3s;
+      }
+      &:hover,
+      &:active,
+      &:focus {
+        &::before {
+          width: 20px;
+        }
       }
     }
     // стили для пункта меню с подкатегориями
