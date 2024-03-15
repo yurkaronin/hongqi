@@ -1,14 +1,11 @@
-// .menu-open {
-//   overflow: hidden;
-//   .header__grid:after {
-//     width: 100%;
-//   }
-//   .navigation {
-//     opacity: 1;
-//     visibility: initial;
-//     pointer-events: initial;
-//   }
-//   .header__flex {
-//     border-bottom: 1px solid var(--color-white-mod-02);
-//   }
-// }
+.menu-open {
+  overflow: hidden;
+  .header__grid:after {
+    width: 100%;
+  }
+  // .navigation {
+  //   opacity: 1;
+  //   visibility: initial;
+  //   pointer-events: initial;
+  // }
+}

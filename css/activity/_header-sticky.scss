@@ -1,8 +1,10 @@
 .header-sticky {
-  .header__sticky {
-    visibility: initial;
-    pointer-events: initial;
-    opacity: 1;
-    transform: translateY(0);
+  @media (min-width: 1280px) {
+    .header__sticky {
+      visibility: initial;
+      pointer-events: initial;
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 }

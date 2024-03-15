@@ -32,6 +32,22 @@ document.addEventListener('DOMContentLoaded', function () {
   headerChange();
   window.addEventListener("scroll", onScroll, { passive: true });
 
+  // показ мобильного меню и кнопки
+  // Проверяем, есть ли кнопка показа меню на странице
+  var buttonMenu = document.querySelector('.button-menu');
+  if (buttonMenu) {
+    // var navigation = document.querySelector('.navigation');
+    // Если navigation тоже существует, назначаем обработчик событий
+    // if (navigation) {
+      buttonMenu.addEventListener('click', function () {
+        buttonMenu.classList.toggle('isActive');
+        // navigation.classList.toggle('isActive');
+        document.body.classList.toggle('menu-open');
+      });
+    // }
+  };
+  // КОНЕЦ показ мобильного меню и кнопки
+
 });
 
 // техническая часть - УДАЛИТЬ НА ПРОДАКШЕНЕ!

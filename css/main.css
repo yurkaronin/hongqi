@@ -567,6 +567,90 @@ input[type=radio].visually-hidden {
   }
 }
 
+.button-menu {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--Dark);
+  width: 64px;
+  height: 64px;
+  padding: 0;
+  max-width: initial;
+  max-height: initial;
+  min-height: initial;
+  background-color: transparent;
+  flex-shrink: 0;
+  outline: 0;
+  border-radius: 50%;
+  border: none;
+}
+.button-menu::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+  pointer-events: none;
+  background-color: transparent;
+  border-radius: 50%;
+  z-index: 0;
+  border: 1px solid var(--Dark);
+}
+.button-menu span, .button-menu span::after, .button-menu span::before {
+  position: absolute;
+  width: 16px;
+  height: 2px;
+  background-color: var(--Dark);
+  z-index: 2;
+  transition: all 0.3s;
+}
+.button-menu span::after, .button-menu span::before {
+  content: "";
+  display: block;
+}
+.button-menu span::before {
+  transform: translateY(-6px);
+}
+.button-menu span::after {
+  transform: translateY(6px);
+}
+.button-menu.isActive span {
+  height: 0;
+}
+.button-menu.isActive span:before {
+  transform: rotate(-45deg);
+}
+.button-menu.isActive span:after {
+  transform: rotate(45deg);
+}
+.button-menu:hover span,
+.button-menu:hover span::after,
+.button-menu:hover span::before, .button-menu:active span,
+.button-menu:active span::after,
+.button-menu:active span::before, .button-menu:focus span,
+.button-menu:focus span::after,
+.button-menu:focus span::before {
+  width: 24px;
+  background-color: var(--White);
+}
+.button-menu:hover::before, .button-menu:active::before, .button-menu:focus::before {
+  left: -4px;
+  top: -4px;
+  bottom: -4px;
+  right: -4px;
+  background-color: var(--Dark);
+}
+@media (max-width: 767px) {
+  .button-menu {
+    width: 55px;
+    height: 55px;
+  }
+}
+
 .header__static-grid {
   display: grid;
   gap: 32px;
@@ -860,7 +944,34 @@ input[type=radio].visually-hidden {
 .header__nav-item:has(ul) .header__nav-link:hover::after, .header__nav-item:has(ul) .header__nav-link:active::after, .header__nav-item:has(ul) .header__nav-link:focus::after {
   transform: rotate(-180deg);
 }
+.header .button-menu {
+  display: none;
+}
 
+@media (max-width: 1280px) {
+  .header__static-grid {
+    align-items: center;
+    grid-template-columns: 70px 1fr;
+  }
+  .header__static-top {
+    grid-template-columns: auto auto 1fr;
+    justify-content: flex-start;
+  }
+  .header__static-bottom {
+    display: none;
+  }
+  .header__static-top::before {
+    display: none;
+  }
+  .header__logo {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  .header .button-menu {
+    display: flex;
+    margin-left: auto;
+  }
+}
 .visually-hidden:not(:focus),
 input[type=checkbox].visually-hidden,
 input[type=radio].visually-hidden {
@@ -877,11 +988,20 @@ input[type=radio].visually-hidden {
   clip-path: inset(100%);
 }
 
-.header-sticky .header__sticky {
-  visibility: initial;
-  pointer-events: initial;
-  opacity: 1;
-  transform: translateY(0);
+@media (min-width: 1280px) {
+  .header-sticky .header__sticky {
+    visibility: initial;
+    pointer-events: initial;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.menu-open {
+  overflow: hidden;
+}
+.menu-open .header__grid:after {
+  width: 100%;
 }
 
 .modal-open {
