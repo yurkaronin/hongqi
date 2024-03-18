@@ -19,9 +19,9 @@
 
 <body class="body">
 
-  <!-- шапка до скрола - статичная  -->
   <header class="header">
 
+    <!-- шапка до скрола - статичная  -->
     <div class="header__static">
       <div class="wrapper">
         <div class="header__static-grid">
@@ -36,19 +36,19 @@
               <span class="header__description">HONGQI КЛЮЧАВТО Краснодар</span>
 
               <div class="header__contacts">
-                <div class="header__contacts-label">
+                <button class="header__contacts-label" type="button">
                   <svg>
                     <use href="./svg/sprite.svg#phone"></use>
                   </svg>
                   <span>Наши телефоны</span>
-                </div>
+                </button>
 
                 <ul class="header__contacts-list list-reset">
-                  <li>
+                  <li class="header__contacts-item">
                     HONGQI КЛЮЧАВТО Краснодар Север
                     <a href="tel:+78619983333"><span>+7 (861) 998-33-33</span></a>
                   </li>
-                  <li>
+                  <li class="header__contacts-item">
                     HONGQI КЛЮЧАВТО Краснодар Аэропорт
                     <a href="tel:+78619987777"><span>+7 (861) 998-77-77</span></a>
                   </li>
@@ -136,16 +136,17 @@
       </div>
     </div>
 
-    <!-- шапка при скроле - прилипающая  -->
+    <!-- шапка при скроле - прилипающая ТОЛЬКО НА ДЕСКТОПЕ -->
     <div class="header__sticky">
       <div class="wrapper">
         <div class="header__sticky-grid">
-          <div class="header__left">
+          <div class="header__sticky-grid-left">
             <a href="#" class="header__logo">
               <img src="./img/logotype/logo-big.png" alt="лого">
             </a>
           </div>
-          <div class="header__center">
+          <div class="header__sticky-grid-center">
+            <!-- <span class="header__description">HONGQI КЛЮЧАВТО Краснодар</span> -->
             <nav class="header__nav">
               <ul class="header__nav-list list-reset">
                 <li class="header__nav-item">
@@ -211,7 +212,7 @@
               </ul>
             </nav>
           </div>
-          <div class="header__right">
+          <div class="header__sticky-grid-right">
             <div class="header__contacts">
               <div class="header__contacts-label">
                 <svg>
@@ -233,8 +234,78 @@
             </div>
           </div>
         </div>
+        </div>
       </div>
     </div>
+
+    <!-- Мобильное меню  -->
+    <div class="header__mobile-navigation js-mobile-nav">
+      <div class="wrapper">
+        <!-- меню  -->
+        <nav class="header__mobile-navigation-inner" data-simplebar>
+          <ul class="header__mobile-navigation-list list-reset">
+
+            <li class="header__mobile-navigation-item">
+              <a href="#" class="header__mobile-navigation-link">
+                <span>Модельный ряд</span>
+              </a>
+            </li>
+
+            <li class="header__mobile-navigation-item">
+              <a href="#" class="header__mobile-navigation-link">
+                <span>Автомобили в наличии</span>
+              </a>
+            </li>
+            <li class="header__mobile-navigation-item">
+              <a href="#" class="header__mobile-navigation-link">
+                <span>Услуги</span>
+              </a>
+            </li>
+            <li class="header__mobile-navigation-item">
+              <a href="#" class="header__mobile-navigation-link">
+                <span>Сервис</span>
+              </a>
+              <ul class="header__mobile-navigation-sublist list-reset js-nav-sublist">
+                <li class="header__mobile-navigation-sublist-item">
+                  <a href="#" class="header__mobile-navigation-sublist-link">
+                    <span>Кредит</span>
+                  </a>
+                </li>
+                <li class="header__mobile-navigation-sublist-item">
+                  <a href="#" class="header__mobile-navigation-sublist-link">
+                    <span>Страхование</span>
+                  </a>
+                </li>
+                <li class="header__mobile-navigation-sublist-item">
+                  <a href="#" class="header__mobile-navigation-sublist-link">
+                    <span>Лизинг</span>
+                  </a>
+                </li>
+                <li class="header__mobile-navigation-sublist-item">
+                  <a href="#" class="header__mobile-navigation-sublist-link">
+                    <span>Трейд-ин (выкуп)</span>
+                  </a>
+                </li>
+
+              </ul>
+            </li>
+
+            <li class="header__mobile-navigation-item">
+              <a href="#" class="header__mobile-navigation-link">
+                <span>О компании</span>
+              </a>
+            </li>
+            <li class="header__mobile-navigation-item">
+              <a href="#" class="header__mobile-navigation-link">
+                <span>Контакты</span>
+              </a>
+            </li>
+
+          </ul>
+        </nav>
+      </div>
+    </div>
+
 
   </header>
 

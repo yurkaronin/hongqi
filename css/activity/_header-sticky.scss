@@ -1,10 +1,47 @@
 .header-sticky {
-  @media (min-width: 1280px) {
+  @media (min-width: 1281px) {
     .header__sticky {
       visibility: initial;
       pointer-events: initial;
       opacity: 1;
       transform: translateY(0);
     }
+  }
+
+  @media (max-width: 1280px) {
+    .main {
+      margin-top: 88px;
+    }
+    .header__static {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
+      transition: all 0.3s;
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 1px;
+        background-color: var(--Line);
+      }
+      &-grid {
+        grid-template-columns: 45px 1fr;
+      }
+    }
+
+    .button-menu {
+      width: 40px;
+      height: 40px;
+    }
+    &__contacts-label {
+      width: 40px;
+      height: 40px;
+    }
+
   }
 }

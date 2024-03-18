@@ -9,6 +9,7 @@
 // blocks
 @import
 "./blocks/wrapper",
+"./blocks/simplebar",
 "./blocks/button",
 "./blocks/section",
 "./blocks/navigation",
@@ -38,4 +39,5 @@
 @import
 "./activity/header-sticky",
 "./activity/menu-open",
-"./activity/modal-open";
+"./activity/modal-open",
+"./activity/mobile-nav-accordeon";
