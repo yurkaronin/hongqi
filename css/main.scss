@@ -6,6 +6,11 @@
 "./base/global",
 "./base/support";
 
+// utils
+@import
+"./utils/visually-hidden",
+"./utils/list-reset";
+
 // blocks
 @import
 "./blocks/wrapper",
@@ -23,15 +28,14 @@
 // sections
 @import
 "./sections/header",
+
 "./sections/main",
-"./sections/first-screen",
-"./sections/modal",
+"./sections/hero-slider",
+
 "./sections/footer";
 
-// utils
-@import
-"./utils/visually-hidden",
-"./utils/list-reset";
+@import"./sections/modal";
+
 // pages
 
 

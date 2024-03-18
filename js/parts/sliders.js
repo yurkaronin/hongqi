@@ -42,3 +42,13 @@
 //   });
 
 // };
+
+if(document.querySelector('.hero-slider .mySwiper')) {
+
+  var swiperHero = new Swiper(".hero-slider .mySwiper", {
+    pagination: {
+      el: ".hero-slider .swiper-pagination",
+    },
+  });
+};
+

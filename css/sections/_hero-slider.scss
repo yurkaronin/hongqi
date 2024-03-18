@@ -1,0 +1,119 @@
+.hero-slider {
+  &__grid {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 112px);
+  }
+
+  &__top {
+    flex: 1;
+  }
+
+  &__footer {
+    height: 112px; /* Указываем высоту для футера */
+  }
+  &__slide {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: var(--Dark);
+    color: var(--White);
+  }
+  .wrapper {
+    height: 100%;
+  }
+  &__slide-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    img {
+      display: block;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+      background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
+    }
+  }
+  &__slide-details {
+    position: relative;
+    z-index: 10;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__slide-title {
+    display: block;
+    margin: 0;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 150%;
+    color: var(--white);
+    margin-bottom: 11px;
+  }
+  &__slide-text {
+    margin: 0;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 133%;
+    color: var(--white);
+    opacity: 0.8;
+    margin-bottom: 34px;
+  }
+
+  .swiper-pagination {
+    pointer-events: initial;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    // transform: none;
+    right: 5%;
+    max-width: max-content;
+    left: initial;
+    justify-content: center;
+  }
+
+  .swiper-pagination-bullet {
+    background-color: var(--White);
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: var(--Red);
+  }
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+  .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 12px 0;
+  }
+}

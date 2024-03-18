@@ -12,13 +12,374 @@
 </head>
 
 <body class="body">
+  <!-- Шапка  -->
   <header class="header">
-    <div class="wrapper">
 
+    <!-- шапка до скрола - статичная  -->
+    <div class="header__static">
+      <div class="wrapper">
+        <div class="header__static-grid">
+          <div class="header__static-left">
+            <a href="#" class="header__logo">
+              <img src="./img/logotype/logo-big.png" alt="лого">
+            </a>
+          </div>
+          <div class="header__static-right">
+
+            <div class="header__static-top">
+              <span class="header__description">HONGQI КЛЮЧАВТО Краснодар</span>
+
+              <div class="header__contacts">
+                <button class="header__contacts-label" type="button">
+                  <svg>
+                    <use href="./svg/sprite.svg#phone"></use>
+                  </svg>
+                  <span>Наши телефоны</span>
+                </button>
+
+                <ul class="header__contacts-list list-reset">
+                  <li class="header__contacts-item">
+                    HONGQI КЛЮЧАВТО Краснодар Север
+                    <a href="tel:+78619983333"><span>+7 (861) 998-33-33</span></a>
+                  </li>
+                  <li class="header__contacts-item">
+                    HONGQI КЛЮЧАВТО Краснодар Аэропорт
+                    <a href="tel:+78619987777"><span>+7 (861) 998-77-77</span></a>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- кнопка меню  -->
+              <button class="button-menu" type="button">
+                <span></span>
+              </button>
+            </div>
+
+            <div class="header__static-bottom">
+
+              <!-- меню  -->
+              <nav class="header__nav">
+                <ul class="header__nav-list list-reset">
+                  <li class="header__nav-item">
+                    <a href="#" class="header__nav-link">
+                      <span>Модельный ряд</span>
+                    </a>
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="#" class="header__nav-link">
+                      <span>Автомобили в наличии</span>
+                    </a>
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="#" class="header__nav-link">
+                      <span>Услуги</span>
+                    </a>
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="#" class="header__nav-link">
+                      <span>Сервис</span>
+                    </a>
+                    <ul class="header__nav-sublist list-reset">
+                      <li class="header__nav-sublist-item">
+                        <a href="#" class="header__nav-sublist-link">
+                          <span>Кредит</span>
+                        </a>
+                      </li>
+                      <li class="header__nav-sublist-item">
+                        <a href="#" class="header__nav-sublist-link">
+                          <span>Страхование</span>
+                        </a>
+                      </li>
+                      <li class="header__nav-sublist-item">
+                        <a href="#" class="header__nav-sublist-link">
+                          <span>Лизинг</span>
+                        </a>
+                      </li>
+                      <li class="header__nav-sublist-item">
+                        <a href="#" class="header__nav-sublist-link">
+                          <span>Трейд-ин (выкуп)</span>
+                        </a>
+                      </li>
+
+                    </ul>
+                  </li>
+
+                  <li class="header__nav-item">
+                    <a href="#" class="header__nav-link">
+                      <span>О компании</span>
+                    </a>
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="#" class="header__nav-link">
+                      <span>Контакты</span>
+                    </a>
+                  </li>
+
+
+
+
+
+
+                </ul>
+              </nav>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
     </div>
-  </header>
-  <main class="main">
 
+    <!-- шапка при скроле - прилипающая ТОЛЬКО НА ДЕСКТОПЕ -->
+    <div class="header__sticky">
+      <div class="wrapper">
+        <div class="header__sticky-grid">
+          <div class="header__sticky-grid-left">
+            <a href="#" class="header__logo">
+              <img src="./img/logotype/logo-big.png" alt="лого">
+            </a>
+          </div>
+          <div class="header__sticky-grid-center">
+            <!-- <span class="header__description">HONGQI КЛЮЧАВТО Краснодар</span> -->
+            <nav class="header__nav">
+              <ul class="header__nav-list list-reset">
+                <li class="header__nav-item">
+                  <a href="#" class="header__nav-link">
+                    <span>Модельный ряд</span>
+                  </a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="#" class="header__nav-link">
+                    <span>Автомобили в наличии</span>
+                  </a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="#" class="header__nav-link">
+                    <span>Услуги</span>
+                  </a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="#" class="header__nav-link">
+                    <span>Сервис</span>
+                  </a>
+                  <ul class="header__nav-sublist list-reset">
+                    <li class="header__nav-sublist-item">
+                      <a href="#" class="header__nav-sublist-link">
+                        <span>Кредит</span>
+                      </a>
+                    </li>
+                    <li class="header__nav-sublist-item">
+                      <a href="#" class="header__nav-sublist-link">
+                        <span>Страхование</span>
+                      </a>
+                    </li>
+                    <li class="header__nav-sublist-item">
+                      <a href="#" class="header__nav-sublist-link">
+                        <span>Лизинг</span>
+                      </a>
+                    </li>
+                    <li class="header__nav-sublist-item">
+                      <a href="#" class="header__nav-sublist-link">
+                        <span>Трейд-ин (выкуп)</span>
+                      </a>
+                    </li>
+
+                  </ul>
+                </li>
+
+                <li class="header__nav-item">
+                  <a href="#" class="header__nav-link">
+                    <span>О компании</span>
+                  </a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="#" class="header__nav-link">
+                    <span>Контакты</span>
+                  </a>
+                </li>
+
+
+
+
+
+
+              </ul>
+            </nav>
+          </div>
+          <div class="header__sticky-grid-right">
+            <div class="header__contacts">
+              <div class="header__contacts-label">
+                <svg>
+                  <use href="./svg/sprite.svg#phone"></use>
+                </svg>
+                <span>Наши телефоны</span>
+              </div>
+
+              <ul class="header__contacts-list list-reset">
+                <li>
+                  HONGQI КЛЮЧАВТО Краснодар Север
+                  <a href="tel:+78619983333"><span>+7 (861) 998-33-33</span></a>
+                </li>
+                <li>
+                  HONGQI КЛЮЧАВТО Краснодар Аэропорт
+                  <a href="tel:+78619987777"><span>+7 (861) 998-77-77</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <!-- Мобильное меню  -->
+    <div class="header__mobile-navigation js-mobile-nav">
+      <div class="wrapper">
+        <!-- меню  -->
+        <nav class="header__mobile-navigation-inner" data-simplebar>
+          <ul class="header__mobile-navigation-list list-reset">
+
+            <li class="header__mobile-navigation-item">
+              <a href="#" class="header__mobile-navigation-link">
+                <span>Модельный ряд</span>
+              </a>
+            </li>
+
+            <li class="header__mobile-navigation-item">
+              <a href="#" class="header__mobile-navigation-link">
+                <span>Автомобили в наличии</span>
+              </a>
+            </li>
+            <li class="header__mobile-navigation-item">
+              <a href="#" class="header__mobile-navigation-link">
+                <span>Услуги</span>
+              </a>
+            </li>
+            <li class="header__mobile-navigation-item">
+              <a href="#" class="header__mobile-navigation-link">
+                <span>Сервис</span>
+              </a>
+              <ul class="header__mobile-navigation-sublist list-reset js-nav-sublist">
+                <li class="header__mobile-navigation-sublist-item">
+                  <a href="#" class="header__mobile-navigation-sublist-link">
+                    <span>Кредит</span>
+                  </a>
+                </li>
+                <li class="header__mobile-navigation-sublist-item">
+                  <a href="#" class="header__mobile-navigation-sublist-link">
+                    <span>Страхование</span>
+                  </a>
+                </li>
+                <li class="header__mobile-navigation-sublist-item">
+                  <a href="#" class="header__mobile-navigation-sublist-link">
+                    <span>Лизинг</span>
+                  </a>
+                </li>
+                <li class="header__mobile-navigation-sublist-item">
+                  <a href="#" class="header__mobile-navigation-sublist-link">
+                    <span>Трейд-ин (выкуп)</span>
+                  </a>
+                </li>
+
+              </ul>
+            </li>
+
+            <li class="header__mobile-navigation-item">
+              <a href="#" class="header__mobile-navigation-link">
+                <span>О компании</span>
+              </a>
+            </li>
+            <li class="header__mobile-navigation-item">
+              <a href="#" class="header__mobile-navigation-link">
+                <span>Контакты</span>
+              </a>
+            </li>
+
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+
+  </header>
+  <!-- Основной контент  -->
+  <main class="main">
+    <!-- hero slider  -->
+    <section class="hero-slider">
+      <div class="hero-slider__grid">
+        <div class="hero-slider__top">
+          <!-- Swiper -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <!-- Слайд 1 -->
+              <div class="swiper-slide">
+                <div class="hero-slider__slide">
+                  <div class="wrapper">
+                    <div class="hero-slider__slide-image">
+                      <img src="./img/hero-slider/1.jpg" alt="Фото автомобиля" loading="lazy">
+                    </div>
+
+                    <div class="hero-slider__slide-details">
+                      <h3 class="hero-slider__slide-title">Встречайте седан HONGQI H5</h3>
+                      <p class="hero-slider__slide-text">Автомобиль с новым двигателем собственной разработки Hongqi</p>
+                      <a href="#" class="button"><span>автомобили в наличии</span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Слайд 2 -->
+              <div class="swiper-slide">
+                <div class="hero-slider__slide">
+                  <div class="wrapper">
+                    <div class="hero-slider__slide-image">
+                      <img src="./img/hero-slider/2.jpg" alt="Фото автомобиля" loading="lazy">
+                    </div>
+
+                    <div class="hero-slider__slide-details">
+                      <h3 class="hero-slider__slide-title">Встречайте седан HONGQI H5</h3>
+                      <p class="hero-slider__slide-text">Автомобиль с новым двигателем собственной разработки Hongqi</p>
+                      <a href="#" class="button"><span>автомобили в наличии</span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Слайд 3 -->
+              <div class="swiper-slide">
+                <div class="hero-slider__slide">
+                  <div class="wrapper">
+                    <div class="hero-slider__slide-image">
+                      <img src="./img/hero-slider/3.jpg" alt="Фото автомобиля" loading="lazy">
+                    </div>
+
+                    <div class="hero-slider__slide-details">
+                      <h3 class="hero-slider__slide-title">Встречайте седан HONGQI H5</h3>
+                      <p class="hero-slider__slide-text">Автомобиль с новым двигателем собственной разработки Hongqi</p>
+                      <a href="#" class="button"><span>автомобили в наличии</span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- Пагинация  -->
+          <!-- <div class="hero-slider__pagination">
+            <div class="wrapper"> -->
+              <div class="swiper-pagination"></div>
+            <!-- </div>
+          </div> -->
+
+        </div>
+
+        <div class="hero-slider__footer"></div>
+      </div>
+
+
+
+
+
+
+    </section>
   </main>
   <footer class="footer">
     <div class="wrapper"></div>
